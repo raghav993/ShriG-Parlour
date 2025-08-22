@@ -1430,7 +1430,7 @@ label {
   box-sizing: border-box;
   content: "";
   left: 0;
-  /* opacity: 0; */
+  opacity: 0;
   overflow: visible;
   position: absolute;
   right: 0;
