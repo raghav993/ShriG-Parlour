@@ -47,6 +47,24 @@
 		.animated-img:hover {
 			transform: scale(1.6);
 		}
+
+		.service-images img {
+			width: 100%;
+			height: 250px;
+			/* fix ek size, jaise 250px */
+			object-fit: cover;
+			/* image ko crop karke equal dikhayega */
+			border-radius: 10px;
+			/* optional: thoda rounded look */
+		}
+
+		/* Portfolio images same size */
+		.awesome-project-content .awesome-img img {
+			width: 100%;
+			height: 220px;
+			object-fit: cover;
+			border-radius: 10px;
+		}
 	</style>
 </head>
 
@@ -121,7 +139,6 @@
 				<img src="img/slider/3.png" alt="" title="#slider-direction-1" />
 				<img src="img/slider/4.png" alt="" title="#slider-direction-2" />
 			</div>
-			<!-- direction 1 -->
 			<!-- <div id="slider-direction-1" class="slider-direction slider-one">
 				<div class="container">
 					<div class="row">
@@ -141,9 +158,8 @@
 						</div>
 					</div>
 				</div>
-			</div> -->
-			<!-- direction 2 -->
-			<!-- <div id="slider-direction-2" class="slider-direction slider-two">
+			</div>
+			<div id="slider-direction-2" class="slider-direction slider-two">
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-12 col-md-12 col-sm-12 text-center">
@@ -180,7 +196,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+				<div class="col-lg-6  col-xs-12">
 					<div class="banner-item">
 						<div class="single-banner wow slideInUp" data-wow-duration="1s" data-wow-delay=".2s">
 							<a href="#">
@@ -189,7 +205,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+				<div class="col-lg-6  col-xs-12">
 					<div class="banner-item">
 						<div class="single-banner banner-mar wow slideInUp" data-wow-duration="1s" data-wow-delay=".3s">
 							<a href="#">
@@ -213,66 +229,44 @@
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					<div class="section-headline text-center">
-						<h3>About Me</h3>
-						<p>Welcome to my beauty salon! I am a skilled beauty expert, dedicated to providing top-quality
-							salon services that enhance your natural beauty.</p>
+						<h3 >
+							<span style="color:#ff69b4;">&#10024;</span> ABOUT SHRiG PARLOUR <span style="color:#ff69b4;">&#10024;</span>
+						</h3>
+						<hr style="width:80px; border:2px solid #ff69b4; margin:10px auto;">
+						<p style="font-size:1.15rem; color:#444;">
+							Welcome to ShriG Parlour, your trusted destination for beauty, care, and confidence.<br>
+							Our goal is to provide every client with the best services in a relaxing and comfortable environment.
+						</p>
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-lg-3 col-md-6 col-sm-4 wow slideInUp" data-wow-duration="1s" data-wow-delay=".2s">
-					<div class="team-member">
-						<div class="team-side-text">
-							<div class="team-left-text">
-								<h4>Meet Your Beauty Expert</h4>
-								<p>With years of experience in hair styling, makeup, and skincare, I am here to help you
-									look and feel your best. Whether it's a casual makeover or a bridal look, I ensure
-									perfection in every detail.</p>
-							</div>
-							<div class="email-news">
-								<form action="#">
-									<div class="email_button">
-										<input type="text" placeholder="Email" />
-										<button type="submit"><i class="fa fa-envelope"></i></button>
-									</div>
-								</form>
-							</div>
-							<div class="team-left-icon text-center">
-								<ul>
-									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-									<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-									<li><a href="#"><i class="fa fa-youtube"></i></a></li>
-									<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-								</ul>
-							</div>
-						</div>
+			<div class="row" style="justify-content:center;">
+				<div class="col-lg-4 col-md-5 col-sm-12 wow slideInUp" data-wow-duration="1s" data-wow-delay=".2s">
+					<div style="background:#fff; border-radius:16px; box-shadow:0 4px 24px rgba(0,0,0,0.08); padding:18px; text-align:center;">
+						<img src="img/banner/about.jpg" alt="" style="width:100%; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.07); margin-bottom:10px;">
+						<h4 style="margin:0; color:#ff69b4; font-weight:600;">Bridal & Fashion</h4>
 					</div>
 				</div>
-				<div class="col-lg-9 col-md-6 col-sm-8 team-left wow slideInUp" data-wow-duration="1s"
-					data-wow-delay=".2s">
-					<div class="team-member-carousel team-indicator">
-						<!-- Start single-member -->
-						<div class="single-team-member">
-							<div class="">
-								<a href="#">
-									<img src="img/team/team2.jpg" alt="">
-								</a>
-								<div class="team-social-icon text-center">
-									<ul>
-										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-										<li><a href="#"><i class="fa fa-youtube"></i></a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="team-content head-team">
-								<h4>Professional Services</h4>
-								<p>Providing expert salon services including hairstyling, bridal makeup, skincare
-									treatments, and more with a personal touch.</p>
-							</div>
+				<div class="col-lg-8 col-md-7 col-sm-12 team-left wow slideInUp" data-wow-duration="1s" data-wow-delay=".2s">
+					<div style="background:#fff; border-radius:16px; box-shadow:0 4px 24px rgba(0,0,0,0.08); padding:28px;">
+						<p style="font-size:1.08rem; color:#333; margin-bottom:18px;">
+							At <span style="color:#ff69b4; font-weight:600;">ShriG Parlour</span>, we use high-quality products and modern techniques to give you a flawless look and a refreshing experience.<br>
+							Whether it’s a <b>bridal makeover</b>, daily beauty care, or a special occasion glow-up, we offer personalized services that perfectly match your style and personality.
+						</p>
+						<div style="margin-bottom:10px;">
+							<h5 style="color:#ff69b4; font-weight:700; margin-bottom:8px;">
+								<span style="font-size:1.3em;">&#127800;</span> Why Choose ShriG Parlour?
+							</h5>
+							<ul style="list-style:none; padding-left:0; color:#444; font-size:1.05rem;">
+								<li><span style="color:#ff69b4;">&#10003;</span> Skilled & trained professionals</li>
+								<li><span style="color:#ff69b4;">&#10003;</span> Premium products & top hygiene standards</li>
+								<li><span style="color:#ff69b4;">&#10003;</span> Affordable & customized packages</li>
+								<li><span style="color:#ff69b4;">&#10003;</span> Friendly atmosphere & personal care</li>
+							</ul>
 						</div>
-						<!-- End single-member -->
+						<p style="color:#ff69b4; font-weight:500;">
+							Because at ShriG Parlour, beauty is not just about how you look—it’s about how confident you feel. <span style="font-size:1.2em;">&#127802;</span>
+						</p>
 					</div>
 				</div>
 			</div>
@@ -283,87 +277,112 @@
 	<div class="service-area area-padding" id="service">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="col-lg-12 col-md-12 col-sm-12">
 					<div class="section-headline text-center">
 						<h3>Our Services</h3>
-						<p>We offer a range of beauty and grooming services tailored for you.</p>
+						<p>We offer a wide range of beauty and grooming services, tailored just for you.</p>
 					</div>
 				</div>
 			</div>
+
 			<div class="row mar-table mob-res">
-				<!-- Hair Care Services -->
-				<div class="col-lg-4 col-md-4 col-sm-6 wow slideInUp" data-wow-duration="1s" data-wow-delay=".2s">
-					<div class="">
-						<div class="cut-content head-team mt-3">
-							<h4>Hair Care</h4>
-						</div>
-						<div class="service-images">
-							<a href="#">
-								<img src="img/service/service1.jpg" alt="Hair Care" class="animated-img">
-							</a>
-						</div>
+				<!-- Hair Care -->
+				<div class="col-lg-4  wow slideInUp" data-wow-duration="1s" data-wow-delay=".2s">
+					<div class="cut-content head-team mt-3">
+						<h4>Hair Care</h4>
+					</div>
+					<div class="service-images">
+						<img src="img/service/care.jpg" alt="Hair Care" class="animated-img">
 					</div>
 				</div>
-				<!-- Skin Care Services -->
-				<div class="col-lg-4 col-md-4 col-sm-6 wow slideInUp" data-wow-duration="1s" data-wow-delay=".4s">
-					<div class="">
-						<div class="cut-content head-team">
-							<h4>Skin Care</h4>
-						</div>
-						<div class="service-images">
-							<a href="#">
-								<img src="img/service/service2.jpg" alt="Skin Care" class="animated-img">
-							</a>
-						</div>
+
+				<!-- Hair Treatment -->
+				<div class="col-lg-4  wow slideInUp" data-wow-duration="1s" data-wow-delay=".3s">
+					<div class="cut-content head-team mt-3">
+						<h4>Hair Treatment</h4>
+					</div>
+					<div class="service-images">
+						<img src="img/service/hcare.jpg" alt="Hair Treatment" class="animated-img">
 					</div>
 				</div>
-				<!-- Makeup Services -->
-				<div class="col-lg-4 col-md-4 col-sm-6 wow slideInUp" data-wow-duration="1s" data-wow-delay=".6s">
-					<div class="">
-						<div class="cut-content head-team">
-							<h4>Makeup Services</h4>
-						</div>
-						<div class="service-images">
-							<a href="#">
-								<img src="img/service/service3.jpg" alt="Makeup Services" class="animated-img">
-							</a>
-						</div>
+
+				<!-- Skin Care -->
+				<div class="col-lg-4  wow slideInUp" data-wow-duration="1s" data-wow-delay=".4s">
+					<div class="cut-content head-team">
+						<h4>Skin Care</h4>
+					</div>
+					<div class="service-images">
+						<img src="img/service/skin.jpg" alt="Skin Care" class="animated-img">
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-4 col-sm-6 wow slideInUp" data-wow-duration="1s" data-wow-delay=".4s">
-					<div class="">
-						<div class="cut-content head-team">
-							<h4>Nail Arts</h4>
-						</div>
-						<div class="service-images">
-							<a href="#">
-								<img src="img/service/nail.jpg" alt="Skin Care" class="animated-img">
-							</a>
-						</div>
+
+				<!-- fac -->
+				<div class="col-lg-4  wow slideInUp" data-wow-duration="1s" data-wow-delay=".5s">
+					<div class="cut-content head-team">
+						<h4>fac</h4>
+					</div>
+					<div class="service-images">
+						<img src="img/service/fac1.jpg" alt="fac" class="animated-img">
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-4 col-sm-6 wow slideInUp" data-wow-duration="1s" data-wow-delay=".4s">
-					<div class="">
-						<div class="cut-content head-team">
-							<h4>Threading</h4>
-						</div>
-						<div class="service-images">
-							<a href="#">
-								<img src="img/service/th.jpg" alt="Skin Care" class="animated-img">
-							</a>
-						</div>
+
+				<!-- Makeup -->
+				<div class="col-lg-4  wow slideInUp" data-wow-duration="1s" data-wow-delay=".6s">
+					<div class="cut-content head-team">
+						<h4>Makeup</h4>
+					</div>
+					<div class="service-images">
+						<img src="img/service/service3.jpg" alt="Makeup Services" class="animated-img">
 					</div>
 				</div>
-				<div class="col-lg-4 col-md-4 col-sm-6 wow slideInUp" data-wow-duration="1s" data-wow-delay=".4s">
-					<div class="">
-						<div class="cut-content head-team">
-							<h4>Hair treatment</h4>
-						</div>
-						<div class="service-images">
-							<a href="#">
-								<img src="img/service/hair.jpg" alt="Skin Care" class="animated-img">
-							</a>
-						</div>
+
+				<!-- Eye Makeup -->
+				<div class="col-lg-4  wow slideInUp" data-wow-duration="1s" data-wow-delay=".7s">
+					<div class="cut-content head-team">
+						<h4>Eye Makeup</h4>
+					</div>
+					<div class="service-images">
+						<img src="img/service/eye1.jpg" alt="Eye Makeup" class="animated-img">
+					</div>
+				</div>
+
+				<!-- Manicure -->
+				<div class="col-lg-4  wow slideInUp" data-wow-duration="1s" data-wow-delay=".8s">
+					<div class="cut-content head-team">
+						<h4>Manicure</h4>
+					</div>
+					<div class="service-images">
+						<img src="img/service/mani1.jpg" alt="Manicure" class="animated-img">
+					</div>
+				</div>
+
+				<!-- Pedicure -->
+				<div class="col-lg-4  wow slideInUp" data-wow-duration="1s" data-wow-delay=".9s">
+					<div class="cut-content head-team">
+						<h4>Pedicure</h4>
+					</div>
+					<div class="service-images">
+						<img src="img/service/padicur.jpg" alt="Pedicure" class="animated-img">
+					</div>
+				</div>
+
+				<!-- Nail Art -->
+				<div class="col-lg-4  wow slideInUp" data-wow-duration="1s" data-wow-delay="1s">
+					<div class="cut-content head-team">
+						<h4>Nail Art</h4>
+					</div>
+					<div class="service-images">
+						<img src="img/service/nail.jpg" alt="Nail Art" class="animated-img">
+					</div>
+				</div>
+
+				<!-- Threading -->
+				<div class="col-lg-4  wow slideInUp" data-wow-duration="1s" data-wow-delay="1.1s">
+					<div class="cut-content head-team">
+						<h4>Threading</h4>
+					</div>
+					<div class="service-images">
+						<img src="img/service/th2.jpg" alt="Threading" class="animated-img">
 					</div>
 				</div>
 			</div>
@@ -390,77 +409,43 @@
 						<div class="awesome-menu ">
 							<ul class="project-menu">
 								<li><a href="#" class="active" data-filter="*">All</a></li>
-								<li><a href="#" data-filter=".hair">hair</a></li>
-								<li><a href="#" data-filter=".faceial">faceial</a></li>
-								<li><a href="#" data-filter=".makeup">makeup</a></li>
+								<li><a href="#" data-filter=".hair">Hair</a></li>
+								<li><a href="#" data-filter=".makeup">Makeup</a></li>
+								<li><a href="#" data-filter=".facial">Facial</a></li>
+								<li><a href="#" data-filter=".nail">Nail Art</a></li>
+								<li><a href="#" data-filter=".threading">Threading</a></li>
+								<li><a href="#" data-filter=".waxing">Waxing</a></li>
+								<li><a href="#" data-filter=".hairtreatment">Pedicure & Manicure</a></li>
 							</ul>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					<div class="awesome-project-content">
-						<!-- single-awesome-project start -->
-						<div class="single-awesome-project hair faceial">
+						<!-- Hair (4 images) -->
+						<div class="single-awesome-project hair">
 							<div class="awesome-img">
-								<a href="#"><img src="img/portfolio/1.jpg" alt="" /></a>
+								<a href="#"><img src="img/portfolio/hair.jpg" alt="" /></a>
 								<div class="add-actions">
 									<div class="project-dec">
 										<h5><a href="#">Hair styles</a></h5>
 										<span>Modeling</span>
 									</div>
 									<ul class="project-action-btn">
-										<li><a class="venobox" data-gall="myGallery" href="img/portfolio/1.jpg"><i
+										<li><a class="venobox" data-gall="myGallery" href="img/portfolio/hair.jpg"><i
 													class="fa fa-search-plus"></i></a></li>
 										<li><a href="#"><i class="fa fa-link"></i></a></li>
 									</ul>
 								</div>
 							</div>
 						</div>
-						<!-- single-awesome-project end -->
-						<!-- single-awesome-project start -->
-						<div class="single-awesome-project makeup">
-							<div class="awesome-img">
-								<a href="#"><img src="img/portfolio/2.jpg" alt="" /></a>
-								<div class="add-actions">
-									<div class="project-dec">
-										<h5><a href="#">Fashion</a></h5>
-										<span>Hero cut</span>
-									</div>
-									<ul class="project-action-btn">
-										<li><a class="venobox" data-gall="myGallery" href="img/portfolio/2.jpg"><i
-													class="fa fa-search-plus"></i></a></li>
-										<li><a href="#"><i class="fa fa-link"></i></a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<!-- single-awesome-project end -->
-						<!-- single-awesome-project start -->
-						<div class="single-awesome-project faceial">
-							<div class="awesome-img">
-								<a href="#"><img src="img/portfolio/3.jpg" alt="" /></a>
-								<div class="add-actions">
-									<div class="project-dec">
-										<h5><a href="#">Makeup</a></h5>
-										<span>Celebrity</span>
-									</div>
-									<ul class="project-action-btn">
-										<li><a class="venobox" data-gall="myGallery" href="img/portfolio/3.jpg"><i
-													class="fa fa-search-plus"></i></a></li>
-										<li><a href="#"><i class="fa fa-link"></i></a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-						<!-- single-awesome-project end -->
-						<!-- single-awesome-project start -->
-						<div class="single-awesome-project makeup hair">
+						<div class="single-awesome-project hair">
 							<div class="awesome-img">
 								<a href="#"><img src="img/portfolio/4.jpg" alt="" /></a>
 								<div class="add-actions">
 									<div class="project-dec">
-										<h5><a href="#">Styles Salon</a></h5>
-										<span>Styles cutting</span>
+										<h5><a href="#">Hair styles</a></h5>
+										<span>Modeling</span>
 									</div>
 									<ul class="project-action-btn">
 										<li><a class="venobox" data-gall="myGallery" href="img/portfolio/4.jpg"><i
@@ -470,97 +455,467 @@
 								</div>
 							</div>
 						</div>
-						<!-- single-awesome-project end -->
-						<!-- single-awesome-project start -->
-						<div class="single-awesome-project faceial">
+						<div class="single-awesome-project hair">
 							<div class="awesome-img">
-								<a href="#"><img src="img/portfolio/5.jpg" alt="" /></a>
+								<a href="#"><img src="img/portfolio/hair3.jpg" alt="" /></a>
 								<div class="add-actions">
 									<div class="project-dec">
-										<h5><a href="#">Spa Room</a></h5>
-										<span>Easily</span>
+										<h5><a href="#">Hair styles</a></h5>
+										<span>Modeling</span>
 									</div>
 									<ul class="project-action-btn">
-										<li><a class="venobox" data-gall="myGallery" href="img/portfolio/5.jpg"><i
+										<li><a class="venobox" data-gall="myGallery" href="img/portfolio/hair3.jpg"><i
 													class="fa fa-search-plus"></i></a></li>
 										<li><a href="#"><i class="fa fa-link"></i></a></li>
 									</ul>
 								</div>
 							</div>
 						</div>
-						<!-- single-awesome-project end -->
-						<!-- single-awesome-project start -->
+						<!-- Makeup (6 images) -->
 						<div class="single-awesome-project makeup">
 							<div class="awesome-img">
-								<a href="#"><img src="img/portfolio/6.jpg" alt="" /></a>
+								<a href="#"><img src="img/portfolio/mackup1.jpg" alt="" /></a>
 								<div class="add-actions">
 									<div class="project-dec">
-										<h5><a href="#">Nice Salon</a></h5>
-										<span>Makeup</span>
+										<h5><a href="#">Fashion</a></h5>
+										<span>Hero cut</span>
 									</div>
 									<ul class="project-action-btn">
-										<li><a class="venobox" data-gall="myGallery" href="img/portfolio/6.jpg"><i
+										<li><a class="venobox" data-gall="myGallery" href="img/portfolio/mackup1.jpg"><i
 													class="fa fa-search-plus"></i></a></li>
 										<li><a href="#"><i class="fa fa-link"></i></a></li>
 									</ul>
 								</div>
 							</div>
 						</div>
-						<!-- single-awesome-project end -->
-						<!-- single-awesome-project start -->
-						<div class="single-awesome-project faceial">
+						<div class="single-awesome-project makeup">
 							<div class="awesome-img">
-								<a href="#"><img src="img/portfolio/7.jpg" alt="" /></a>
+								<a href="#"><img src="img/portfolio/mackup2.jpg" alt="" /></a>
 								<div class="add-actions">
 									<div class="project-dec">
-										<h5><a href="#">Facewash</a></h5>
-										<span>Cleaning</span>
+										<h5><a href="#">Fashion</a></h5>
+										<span>Hero cut</span>
 									</div>
 									<ul class="project-action-btn">
-										<li><a class="venobox" data-gall="myGallery" href="img/portfolio/7.jpg"><i
+										<li><a class="venobox" data-gall="myGallery" href="img/portfolio/mackup2.jpg"><i
 													class="fa fa-search-plus"></i></a></li>
 										<li><a href="#"><i class="fa fa-link"></i></a></li>
 									</ul>
 								</div>
 							</div>
 						</div>
-						<!-- single-awesome-project end -->
-						<!-- single-awesome-project start -->
-						<div class="single-awesome-project hair">
+						<div class="single-awesome-project makeup">
 							<div class="awesome-img">
-								<a href="#"><img src="img/portfolio/8.jpg" alt="" /></a>
+								<a href="#"><img src="img/portfolio/mackup3.jpg" alt="" /></a>
 								<div class="add-actions">
 									<div class="project-dec">
-										<h5><a href="#">Beautyful</a></h5>
-										<span>Haircut</span>
+										<h5><a href="#">Fashion</a></h5>
+										<span>Hero cut</span>
 									</div>
 									<ul class="project-action-btn">
-										<li><a class="venobox" data-gall="myGallery" href="img/portfolio/8.jpg"><i
+										<li><a class="venobox" data-gall="myGallery" href="img/portfolio/mackup3.jpg"><i
 													class="fa fa-search-plus"></i></a></li>
 										<li><a href="#"><i class="fa fa-link"></i></a></li>
 									</ul>
 								</div>
 							</div>
 						</div>
-						<!-- single-awesome-project end -->
-						<!-- single-awesome-project start -->
-						<div class="single-awesome-project hair">
+						<div class="single-awesome-project makeup">
 							<div class="awesome-img">
-								<a href="#"><img src="img/portfolio/9.jpg" alt="" /></a>
+								<a href="#"><img src="img/portfolio/mackup4.jpg" alt="" /></a>
 								<div class="add-actions">
 									<div class="project-dec">
-										<h5><a href="#">Beautyful</a></h5>
-										<span>Haircut</span>
+										<h5><a href="#">Fashion</a></h5>
+										<span>Hero cut</span>
 									</div>
 									<ul class="project-action-btn">
-										<li><a class="venobox" data-gall="myGallery" href="img/portfolio/9.jpg"><i
+										<li><a class="venobox" data-gall="myGallery" href="img/portfolio/mackup4.jpg"><i
 													class="fa fa-search-plus"></i></a></li>
 										<li><a href="#"><i class="fa fa-link"></i></a></li>
 									</ul>
 								</div>
 							</div>
 						</div>
-						<!-- single-awesome-project end -->
+						<div class="single-awesome-project makeup">
+							<div class="awesome-img">
+								<a href="#"><img src="img/portfolio/mackup5.jpg" alt="" /></a>
+								<div class="add-actions">
+									<div class="project-dec">
+										<h5><a href="#">Fashion</a></h5>
+										<span>Hero cut</span>
+									</div>
+									<ul class="project-action-btn">
+										<li><a class="venobox" data-gall="myGallery" href="img/portfolio/mackup5.jpg"><i
+													class="fa fa-search-plus"></i></a></li>
+										<li><a href="#"><i class="fa fa-link"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="single-awesome-project makeup">
+							<div class="awesome-img">
+								<a href="#"><img src="img/portfolio/mackup6.jpg" alt="" /></a>
+								<div class="add-actions">
+									<div class="project-dec">
+										<h5><a href="#">Fashion</a></h5>
+										<span>Hero cut</span>
+									</div>
+									<ul class="project-action-btn">
+										<li><a class="venobox" data-gall="myGallery" href="img/portfolio/mackup6.jpg"><i
+													class="fa fa-search-plus"></i></a></li>
+										<li><a href="#"><i class="fa fa-link"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Facial (6 images) -->
+						<div class="single-awesome-project facial">
+							<div class="awesome-img">
+								<a href="#"><img src="img/portfolio/fac1.jpg" alt="" /></a>
+								<div class="add-actions">
+									<div class="project-dec">
+										<h5><a href="#">Makeup</a></h5>
+										<span>Celebrity</span>
+									</div>
+									<ul class="project-action-btn">
+										<li><a class="venobox" data-gall="myGallery" href="img/portfolio/fac1.jpg"><i
+													class="fa fa-search-plus"></i></a></li>
+										<li><a href="#"><i class="fa fa-link"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="single-awesome-project facial">
+							<div class="awesome-img">
+								<a href="#"><img src="img/portfolio/fac2.jpg" alt="" /></a>
+								<div class="add-actions">
+									<div class="project-dec">
+										<h5><a href="#">Makeup</a></h5>
+										<span>Celebrity</span>
+									</div>
+									<ul class="project-action-btn">
+										<li><a class="venobox" data-gall="myGallery" href="img/portfolio/fac2.jpg"><i
+													class="fa fa-search-plus"></i></a></li>
+										<li><a href="#"><i class="fa fa-link"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="single-awesome-project facial">
+							<div class="awesome-img">
+								<a href="#"><img src="img/portfolio/fac3.jpg" alt="" /></a>
+								<div class="add-actions">
+									<div class="project-dec">
+										<h5><a href="#">Makeup</a></h5>
+										<span>Celebrity</span>
+									</div>
+									<ul class="project-action-btn">
+										<li><a class="venobox" data-gall="myGallery" href="img/portfolio/fac3.jpg"><i
+													class="fa fa-search-plus"></i></a></li>
+										<li><a href="#"><i class="fa fa-link"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="single-awesome-project facial">
+							<div class="awesome-img">
+								<a href="#"><img src="img/portfolio/fac4.jpg" alt="" /></a>
+								<div class="add-actions">
+									<div class="project-dec">
+										<h5><a href="#">Makeup</a></h5>
+										<span>Celebrity</span>
+									</div>
+									<ul class="project-action-btn">
+										<li><a class="venobox" data-gall="myGallery" href="img/portfolio/fac4.jpg"><i
+													class="fa fa-search-plus"></i></a></li>
+										<li><a href="#"><i class="fa fa-link"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Nail Art (4 images) -->
+						<div class="single-awesome-project nail">
+							<div class="awesome-img">
+								<a href="#"><img src="img/portfolio/nail1.jpg" alt="" /></a>
+								<div class="add-actions">
+									<div class="project-dec">
+										<h5><a href="#">Nail Art</a></h5>
+										<span>Creative Designs</span>
+									</div>
+									<ul class="project-action-btn">
+										<li><a class="venobox" data-gall="myGallery" href="img/portfolio/nail1.jpg"><i
+													class="fa fa-search-plus"></i></a></li>
+										<li><a href="#"><i class="fa fa-link"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="single-awesome-project nail">
+							<div class="awesome-img">
+								<a href="#"><img src="img/portfolio/nail2.jpg" alt="" /></a>
+								<div class="add-actions">
+									<div class="project-dec">
+										<h5><a href="#">Nail Art</a></h5>
+										<span>Creative Designs</span>
+									</div>
+									<ul class="project-action-btn">
+										<li><a class="venobox" data-gall="myGallery" href="img/portfolio/nail2.jpg"><i
+													class="fa fa-search-plus"></i></a></li>
+										<li><a href="#"><i class="fa fa-link"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="single-awesome-project nail">
+							<div class="awesome-img">
+								<a href="#"><img src="img/portfolio/nail3.jpg" alt="" /></a>
+								<div class="add-actions">
+									<div class="project-dec">
+										<h5><a href="#">Nail Art</a></h5>
+										<span>Creative Designs</span>
+									</div>
+									<ul class="project-action-btn">
+										<li><a class="venobox" data-gall="myGallery" href="img/portfolio/nail3.jpg"><i
+													class="fa fa-search-plus"></i></a></li>
+										<li><a href="#"><i class="fa fa-link"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="single-awesome-project nail">
+							<div class="awesome-img">
+								<a href="#"><img src="img/portfolio/nail4.jpg" alt="" /></a>
+								<div class="add-actions">
+									<div class="project-dec">
+										<h5><a href="#">Nail Art</a></h5>
+										<span>Creative Designs</span>
+									</div>
+									<ul class="project-action-btn">
+										<li><a class="venobox" data-gall="myGallery" href="img/portfolio/nail4.jpg"><i
+													class="fa fa-search-plus"></i></a></li>
+										<li><a href="#"><i class="fa fa-link"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Threading (6 images) -->
+						<div class="single-awesome-project threading">
+							<div class="awesome-img">
+								<a href="#"><img src="img/portfolio/th1.avif" alt="" /></a>
+								<div class="add-actions">
+									<div class="project-dec">
+										<h5><a href="#">Threading</a></h5>
+										<span>Precision Care</span>
+									</div>
+									<ul class="project-action-btn">
+										<li><a class="venobox" data-gall="myGallery"
+												href="img/portfolio/th1.avif"><i
+													class="fa fa-search-plus"></i></a></li>
+										<li><a href="#"><i class="fa fa-link"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="single-awesome-project threading">
+							<div class="awesome-img">
+								<a href="#"><img src="img/portfolio/th2.avif" alt="" /></a>
+								<div class="add-actions">
+									<div class="project-dec">
+										<h5><a href="#">Threading</a></h5>
+										<span>Precision Care</span>
+									</div>
+									<ul class="project-action-btn">
+										<li><a class="venobox" data-gall="myGallery"
+												href="img/portfolio/th2.avif"><i
+													class="fa fa-search-plus"></i></a></li>
+										<li><a href="#"><i class="fa fa-link"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="single-awesome-project threading">
+							<div class="awesome-img">
+								<a href="#"><img src="img/portfolio/th3.avif" alt="" /></a>
+								<div class="add-actions">
+									<div class="project-dec">
+										<h5><a href="#">Threading</a></h5>
+										<span>Precision Care</span>
+									</div>
+									<ul class="project-action-btn">
+										<li><a class="venobox" data-gall="myGallery"
+												href="img/portfolio/th3.avif"><i
+													class="fa fa-search-plus"></i></a></li>
+										<li><a href="#"><i class="fa fa-link"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Waxing (6 images) -->
+						<div class="single-awesome-project waxing">
+							<div class="awesome-img">
+								<a href="#"><img src="img/portfolio/wax1.avif" alt="" /></a>
+								<div class="add-actions">
+									<div class="project-dec">
+										<h5><a href="#">Waxing</a></h5>
+										<span>Smooth Skin</span>
+									</div>
+									<ul class="project-action-btn">
+										<li><a class="venobox" data-gall="myGallery" href="img/portfolio/wax1.avif"><i
+													class="fa fa-search-plus"></i></a></li>
+										<li><a href="#"><i class="fa fa-link"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="single-awesome-project waxing">
+							<div class="awesome-img">
+								<a href="#"><img src="img/portfolio/wax2.avif" alt="" /></a>
+								<div class="add-actions">
+									<div class="project-dec">
+										<h5><a href="#">Waxing</a></h5>
+										<span>Smooth Skin</span>
+									</div>
+									<ul class="project-action-btn">
+										<li><a class="venobox" data-gall="myGallery" href="img/portfolio/wax2.avif"><i
+													class="fa fa-search-plus"></i></a></li>
+										<li><a href="#"><i class="fa fa-link"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="single-awesome-project waxing">
+							<div class="awesome-img">
+								<a href="#"><img src="img/portfolio/wax3.avif" alt="" /></a>
+								<div class="add-actions">
+									<div class="project-dec">
+										<h5><a href="#">Waxing</a></h5>
+										<span>Smooth Skin</span>
+									</div>
+									<ul class="project-action-btn">
+										<li><a class="venobox" data-gall="myGallery" href="img/portfolio/wax3.avif"><i
+													class="fa fa-search-plus"></i></a></li>
+										<li><a href="#"><i class="fa fa-link"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="single-awesome-project waxing">
+							<div class="awesome-img">
+								<a href="#"><img src="img/portfolio/wax4.avif" alt="" /></a>
+								<div class="add-actions">
+									<div class="project-dec">
+										<h5><a href="#">Waxing</a></h5>
+										<span>Smooth Skin</span>
+									</div>
+									<ul class="project-action-btn">
+										<li><a class="venobox" data-gall="myGallery" href="img/portfolio/wax4.avif"><i
+													class="fa fa-search-plus"></i></a></li>
+										<li><a href="#"><i class="fa fa-link"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="single-awesome-project waxing">
+							<div class="awesome-img">
+								<a href="#"><img src="img/portfolio/wax5.avif" alt="" /></a>
+								<div class="add-actions">
+									<div class="project-dec">
+										<h5><a href="#">Waxing</a></h5>
+										<span>Smooth Skin</span>
+									</div>
+									<ul class="project-action-btn">
+										<li><a class="venobox" data-gall="myGallery" href="img/portfolio/wax5.avif"><i
+													class="fa fa-search-plus"></i></a></li>
+										<li><a href="#"><i class="fa fa-link"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="single-awesome-project waxing">
+							<div class="awesome-img">
+								<a href="#"><img src="img/portfolio/wax6.avif" alt="" /></a>
+								<div class="add-actions">
+									<div class="project-dec">
+										<h5><a href="#">Waxing</a></h5>
+										<span>Smooth Skin</span>
+									</div>
+									<ul class="project-action-btn">
+										<li><a class="venobox" data-gall="myGallery" href="img/portfolio/wax6.avif"><i
+													class="fa fa-search-plus"></i></a></li>
+										<li><a href="#"><i class="fa fa-link"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- Hair Treatment (6 images) -->
+						<div class="single-awesome-project hairtreatment">
+							<div class="awesome-img">
+								<a href="#"><img src="img/portfolio/mani1.jpg" alt="" /></a>
+								<div class="add-actions">
+									<div class="project-dec">
+										<h5><a href="#">Manicure</a></h5>
+										<span>Revitalizing Care</span>
+									</div>
+									<ul class="project-action-btn">
+										<li><a class="venobox" data-gall="myGallery"
+												href="img/portfolio/mani1.jpg"><i
+													class="fa fa-search-plus"></i></a></li>
+										<li><a href="#"><i class="fa fa-link"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="single-awesome-project hairtreatment">
+							<div class="awesome-img">
+								<a href="#"><img src="img/portfolio/mani2.jpg" alt="" /></a>
+								<div class="add-actions">
+									<div class="project-dec">
+										<h5><a href="#">Hair Treatment</a></h5>
+										<span>Revitalizing Care</span>
+									</div>
+									<ul class="project-action-btn">
+										<li><a class="venobox" data-gall="myGallery"
+												href="img/portfolio/mani2.jpg"><i
+													class="fa fa-search-plus"></i></a></li>
+										<li><a href="#"><i class="fa fa-link"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="single-awesome-project hairtreatment">
+							<div class="awesome-img">
+								<a href="#"><img src="img/portfolio/mani3.jpg" alt="" /></a>
+								<div class="add-actions">
+									<div class="project-dec">
+										<h5><a href="#">Manicure</a></h5>
+										<span>Revitalizing Care</span>
+									</div>
+									<ul class="project-action-btn">
+										<li><a class="venobox" data-gall="myGallery"
+												href="img/portfolio/mani3.jpg"><i
+													class="fa fa-search-plus"></i></a></li>
+										<li><a href="#"><i class="fa fa-link"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="single-awesome-project hairtreatment">
+							<div class="awesome-img">
+								<a href="#"><img src="img/portfolio/mani4.jpg" alt="" /></a>
+								<div class="add-actions">
+									<div class="project-dec">
+										<h5><a href="#">Manicure</a></h5>
+										<span>Revitalizing Care</span>
+									</div>
+									<ul class="project-action-btn">
+										<li><a class="venobox" data-gall="myGallery"
+												href="img/portfolio/mani4.jpg"><i
+													class="fa fa-search-plus"></i></a></li>
+										<li><a href="#"><i class="fa fa-link"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -594,7 +949,7 @@
 										<img src="img/testimonial/test2.jpg" alt="">
 									</div>
 									<div class="testi-text text-center">
-										<p>"I loved the facial treatment! My skin feels fresh and glowing. Highly
+										<p>"I loved the fac treatment! My skin feels fresh and glowing. Highly
 											recommended!"</p>
 										<h6>Aarushi Verma</h6>
 										<span class="guest-rev">Skincare Expert - <a href="#">Styles Salon</a></span>
@@ -621,7 +976,6 @@
 			</div>
 		</div>
 	</div>
-
 	<!-- End testimonials end -->
 	<!-- Start Blog Area -->
 	<div class="our-blog-area area-padding" id="blog">
@@ -687,7 +1041,7 @@
 					<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 						<div class="single-blog text-left">
 							<div class="blog-thumb">
-								<img alt="blog img" src="img/blog/bl4.jpg">
+								<img alt="blog img" src="img/bridal/4.jpg">
 							</div>
 							<div class="blog-info">
 								<h3 class="blog-heading"><a href="#">Bridal Makeup Trends for 2025</a></h3>
@@ -752,7 +1106,7 @@
 						<div class="single-icon">
 							<i class="fa fa-mobile"></i>
 							<p>
-								Call : +91-98765-43210<br>
+								Call : +91-94066 75156<br>
 								<span>Everyday (10am-07pm)</span>
 							</p>
 						</div>
@@ -764,7 +1118,7 @@
 							<i class="fa fa-envelope-o"></i>
 							<p>
 								Email : shrigparlour@gmail.com<br>
-								<span>Web: www.parlour.shriginfotech.co.in</span>
+								<span>Web: https://shrig-parlour.vercel.app</span>
 							</p>
 						</div>
 					</div>
@@ -774,8 +1128,9 @@
 						<div class="single-icon">
 							<i class="fa fa-map-marker"></i>
 							<p>
-								Location : Jaisinagar, Sagar, Madhya Pradesh, 470125 <br>
-								<span>Near Gehuras Squire jaisinagar</span>
+								<strong>Visit Us:</strong> ShriG Parlour,
+								Near Sani Mandir, Gehuras Square,
+								Jaisinagar, Sagar (M.P.) – 470125
 							</p>
 						</div>
 					</div>
@@ -784,30 +1139,27 @@
 			<!-- End row -->
 			<div class="row">
 				<!-- Start contact icon column -->
-				<div class="col-md-6 col-sm-6 col-xs-12">
+				<div class=" col-xs-12">
 					<!-- Start Map -->
 					<div class="map-area">
 						<div id="googleMap" style="width:100%;height:330px;">
-							<iframe
-								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.007658426427!2d75.84700307519512!3d23.022505417748313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDAxJzIxLjAiTiA3NcKwNDknMDguMCJF!5e0!3m2!1sen!2sin!4v1710466567890"
-								width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-								referrerpolicy="no-referrer-when-downgrade">
-							</iframe>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d490.5939057648471!2d78.57128323766185!3d23.619298489113643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397ed6a8c08229e9%3A0x7852581850e43b59!2sJaisinagar%2C%20Madhya%20Pradesh%20470125!5e0!3m2!1sen!2sin!4v1755871699792!5m2!1sen!2sin"
+							 width="100%" height="300" style="border:0;"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 						</div>
 					</div>
 					<!-- End Map -->
 				</div>
 				<!-- End contact icon -->
-				<div class="col-md-6 col-sm-6 col-xs-12">
+				<div class=" col-xs-12">
 					<div class="contact-form">
 						<div class="row">
 							<form id="contactForm" method="POST" action="#" class="contact-form">
-								<div class="col-md-6 col-sm-6 col-xs-12">
+								<div class=" col-xs-12">
 									<input type="text" id="name" class="form-control" placeholder="Name" required
 										data-error="Please enter your name">
 									<div class="help-block with-errors"></div>
 								</div>
-								<div class="col-md-6 col-sm-6 col-xs-12">
+								<div class=" col-xs-12">
 									<input type="email" class="email form-control" id="email" placeholder="Email"
 										required data-error="Please enter your email">
 									<div class="help-block with-errors"></div>
@@ -838,7 +1190,6 @@
 	<!-- End Contact Area -->
 	<!-- Start Footer bottom Area -->
 	<footer>
-
 		<div class="footer-area-bottom">
 			<div class="container">
 				<div class="row">

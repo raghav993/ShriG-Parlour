@@ -7,7 +7,7 @@
   padding: 230px 0;
 }
 .nivo-caption::after {
-  background: #444 none repeat scroll 0 0;
+  /* background: #444 none repeat scroll 0 0; */
   content: "";
   height: 100%;
   left: 0;
